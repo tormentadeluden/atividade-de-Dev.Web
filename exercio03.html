@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexível</title>
+    <style>
+        
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid;
+            box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+        }
+
+        .item {
+            background-color: #8e44ad;
+            color: white;
+            text-align: center;
+            border: 1px;
+            padding: 10px;
+            flex-shrink: 0; /* Evita que os itens encolham */
+        }
+
+        .item-extra {
+            background-color: #db3434;
+            color: white;
+            text-align: center;
+            border: 1px;
+            padding: 10px;
+            flex-grow: 1; /* Faz com que este item ocupe o espaço restante */
+        }
+        .item1{
+            background-color:#54bd18;
+        }.item2{
+            background-color:#2c4ad3;
+        }
+        .item3{
+            background-color:#b7c725;
+        }
+        .item4{
+            background-color:#9621cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item-extra">Item Extra</div>
+    </div>
+</body>
+</html>

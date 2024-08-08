@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Complexo com Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header, footer {
+            background-color: #c52222;
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            background-color: #001dc4;
+            color: white;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .sidebar .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .content {
+            background-color: #1ab327;
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Cabeçalho
+    </header>
+    <div class="main-container">
+        <div class="sidebar">
+            barra lateral
+        </div>
+        <div class="content">
+            Área de Conteúdo Principal
+        </div>
+    </div>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>
